@@ -5,11 +5,15 @@
 ```bash
   npx tsx src/scraper/scrape-tcgp-sealed.ts
 ```
+
 Running the script with with additional configs:
+
 Options:
+```bash
   --limit <number>   Max products to scrape (0 = all, useful for testing e.g. --limit 1)
   --output <path>    Output JSON file path (default: pokemon-sealed-tcgplayer-v2-<timestamp>.json)
   --set <name>       Only scrape a specific set by TCGdex name (can be used multiple times, e.g. --set "151")
+```
 
 Examples:
 ```bash
