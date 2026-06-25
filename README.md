@@ -24,3 +24,7 @@ Examples:
   npx tsx src/scraper/scrape-tcgp-sealed.ts --set "151" --set "Scarlet & Violet"
   npx tsx src/scraper/scrape-tcgp-sealed.ts --limit 50 --output test-output.json
 ```
+
+## Other Notes
+
+Refer to full output archived in [/example-out](/example-output)
