@@ -2,6 +2,8 @@
 
 ## Usage
 
+Run the script. Default output is at `/logs`
+
 ```bash
   npx tsx src/scraper/scrape-tcgp-sealed.ts
 ```
