@@ -1,4 +1,4 @@
-## TC Sealed tc-sealed-loki
+## tc-sealed-loki
 
 ## Usage
 
