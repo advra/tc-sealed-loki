@@ -16,7 +16,7 @@ import path from "node:path";
 import { chromium } from "playwright";
 import { ImportLogger } from "../logger/import-logger";
 import { TcgdexSet, TcgpProduct, ScrapedProduct } from "../types";
-import { sleep, jitter } from "../utils";
+import { sleep, jitter, extractProductId, parseProductName } from "../utils";
 
 // ============ FETCH SETS FROM TCGDEX ============
 
@@ -191,7 +191,8 @@ function parseArgs() {
 
 function showHelp() {
   console.log(`
-TCGPlayer Sealed Product Scraper v2 - Scrape Pokemon sealed products from TCGPlayer
+
+TC Loki for sealed
 
 New approach:
   1. Query TCGdex API for all English Pokemon TCG sets
@@ -201,7 +202,7 @@ New approach:
   4. Output as JSON with set info from TCGdex
 
 Usage:
-  npx tsx src/scrape/scrape-tcgp-sealed-v2.ts [options]
+  npx tsx src/scraper/scrape-tcgp-sealed.ts [options]
 
 Options:
   --limit <number>   Max products to scrape (0 = all, useful for testing e.g. --limit 1)
@@ -210,11 +211,11 @@ Options:
   --help, -h         Show this help message
 
 Examples:
-  npx tsx src/scrape/scrape-tcgp-sealed-v2.ts
-  npx tsx src/scrape/scrape-tcgp-sealed-v2.ts --limit 1
-  npx tsx src/scrape/scrape-tcgp-sealed-v2.ts --set "151"
-  npx tsx src/scrape/scrape-tcgp-sealed-v2.ts --set "151" --set "Scarlet & Violet"
-  npx tsx src/scrape/scrape-tcgp-sealed-v2.ts --limit 50 --output test-output.json
+  npx tsx src/scraper/scrape-tcgp-sealed.ts
+  npx tsx src/scraper/scrape-tcgp-sealed.ts --limit 1
+  npx tsx src/scraper/scrape-tcgp-sealed.ts --set "151"
+  npx tsx src/scraper/scrape-tcgp-sealed.ts --set "151" --set "Scarlet & Violet"
+  npx tsx src/scraper/scrape-tcgp-sealed.ts --limit 50 --output test-output.json
   `);
 }
 

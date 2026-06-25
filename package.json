@@ -1,11 +1,11 @@
 {
-  "name": "tc-sealed-scrape",
+  "name": "tc-sealed-loki",
   "version": "0.1.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "npm run test:i",
+    "start": "npx tsx src/scraper/scrape-tcgp-sealed.ts",
     "test": "npm run test:i",
     "build": "rm -rf ./dist/ && rollup -c"
   },
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/advra/tc-sealed-scrape"
+    "url": "https://github.com/advra/tc-sealed-loki"
   },
   "license": "MIT",
   "devDependencies": {
