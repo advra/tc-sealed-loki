@@ -1,0 +1,48 @@
+{
+  "name": "tc-sealed-scrape",
+  "version": "0.1.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "npm run test:i",
+    "test": "npm run test:i",
+    "build": "rm -rf ./dist/ && rollup -c"
+  },
+  "husky": {
+    "pre-commit": "prettier src/* --write",
+    "pre-push": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/advra/tc-sealed-scrape"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.12",
+    "@types/node": "^26.0.1",
+    "husky": "^2.2.0",
+    "prettier": "^1.17.0",
+    "typescript": "^3.4.5"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "collectCoverageFrom": [
+      "src/*.{ts,tsx}"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/",
+      "/dist/"
+    ]
+  },
+  "files": [
+    "dist/"
+  ],
+  "description": "scrape tcgp",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "playwright": "^1.61.1"
+  }
+}
