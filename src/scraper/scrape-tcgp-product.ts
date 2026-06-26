@@ -129,12 +129,12 @@ function parseArgs() {
       options.output = outputArg;
     } else if (arg === "--help" || arg === "-h") {
       options.help = true;
-    } else if (!arg.startsWith("--")) {
-      options.tcgplayerId = arg;
-    } else {
+    } else if (arg.startsWith("--")) {
       console.error(`Error: Unknown argument ${arg}`);
       console.error("Use --help for usage information");
       process.exit(1);
+    } else {
+      options.tcgplayerId = arg;
     }
   }
 
