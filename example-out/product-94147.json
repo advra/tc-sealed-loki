@@ -1,37 +1,77 @@
 {
   "tcgplayerId": "94147",
-  "productName": "Kingler - XY - Phantom Forces - Pokemon - TCGplayer.com",
-  "scrapedAt": "2026-06-26T01:48:04.867Z",
+  "productName": "Kingler",
+  "scrapedAt": "2026-06-26T02:26:32.544Z",
   "prices": [
     {
       "condition": "NM",
-      "marketPrice": "0.40",
-      "listedPrice": "0.25",
-      "listings": 87
+      "variant": "Normal",
+      "marketPrice": "0.4",
+      "listedPrice": "0.18",
+      "listings": 25
     },
     {
       "condition": "LP",
+      "variant": "Normal",
       "marketPrice": "0.25",
-      "listedPrice": "0.23",
-      "listings": 92
+      "listedPrice": "0.05",
+      "listings": 25
     },
     {
       "condition": "MP",
+      "variant": "Normal",
       "marketPrice": "0.14",
-      "listedPrice": "0.09",
-      "listings": 51
-    },
-    {
-      "condition": "HP",
-      "marketPrice": "0.31",
-      "listedPrice": "0.19",
+      "listedPrice": "0.07",
       "listings": 17
     },
     {
+      "condition": "HP",
+      "variant": "Normal",
+      "marketPrice": "0.31",
+      "listedPrice": "0.19",
+      "listings": 3
+    },
+    {
       "condition": "DMG",
+      "variant": "Normal",
       "marketPrice": "0.12",
-      "listedPrice": "0.24",
-      "listings": 13
+      "listedPrice": "0.04",
+      "listings": 4
+    },
+    {
+      "condition": "NM",
+      "variant": "Reverse Holofoil",
+      "marketPrice": "1.04",
+      "listedPrice": "0.47",
+      "listings": 11
+    },
+    {
+      "condition": "LP",
+      "variant": "Reverse Holofoil",
+      "marketPrice": "0.85",
+      "listedPrice": "0.6",
+      "listings": 14
+    },
+    {
+      "condition": "MP",
+      "variant": "Reverse Holofoil",
+      "marketPrice": "0.89",
+      "listedPrice": "0.45",
+      "listings": 4
+    },
+    {
+      "condition": "HP",
+      "variant": "Reverse Holofoil",
+      "marketPrice": "0.5",
+      "listedPrice": "0.5",
+      "listings": 1
+    },
+    {
+      "condition": "DMG",
+      "variant": "Reverse Holofoil",
+      "marketPrice": "0.37",
+      "listedPrice": "0.25",
+      "listings": 5
     }
   ]
 }

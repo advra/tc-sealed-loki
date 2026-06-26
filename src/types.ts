@@ -45,6 +45,7 @@ export type ProductCondition = "NM" | "LP" | "MP" | "HP" | "DMG";
 
 export type ConditionPrice = {
   condition: ProductCondition;
+  variant: string;
   marketPrice: string | undefined;
   listedPrice: string | undefined;
   listings: number | undefined;
