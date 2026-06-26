@@ -1,0 +1,37 @@
+{
+  "tcgplayerId": "94147",
+  "productName": "Kingler - XY - Phantom Forces - Pokemon - TCGplayer.com",
+  "scrapedAt": "2026-06-26T01:48:04.867Z",
+  "prices": [
+    {
+      "condition": "NM",
+      "marketPrice": "0.40",
+      "listedPrice": "0.25",
+      "listings": 87
+    },
+    {
+      "condition": "LP",
+      "marketPrice": "0.25",
+      "listedPrice": "0.23",
+      "listings": 92
+    },
+    {
+      "condition": "MP",
+      "marketPrice": "0.14",
+      "listedPrice": "0.09",
+      "listings": 51
+    },
+    {
+      "condition": "HP",
+      "marketPrice": "0.31",
+      "listedPrice": "0.19",
+      "listings": 17
+    },
+    {
+      "condition": "DMG",
+      "marketPrice": "0.12",
+      "listedPrice": "0.24",
+      "listings": 13
+    }
+  ]
+}

@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "npx tsx src/scraper/scrape-tcgp-sealed.ts",
+    "product": "npx tsx src/scraper/scrape-tcgp-product.ts",
     "test": "npm run test:i",
     "build": "rm -rf ./dist/ && rollup -c"
   },

@@ -38,3 +38,21 @@ export type ScrapedProduct = {
   market: string | undefined;
   url?: string;
 };
+
+// ============ Product Price by Condition Types ============
+
+export type ProductCondition = "NM" | "LP" | "MP" | "HP" | "DMG";
+
+export type ConditionPrice = {
+  condition: ProductCondition;
+  marketPrice: string | undefined;
+  listedPrice: string | undefined;
+  listings: number | undefined;
+};
+
+export type ScrapedProductPrices = {
+  tcgplayerId: string;
+  productName: string;
+  scrapedAt: string;
+  prices: ConditionPrice[];
+};
